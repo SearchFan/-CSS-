@@ -1,0 +1,22 @@
+<view class="title" wx:if="{{!cutted}}">上传时，会自动显示图片的主要特征标签</view>
+
+<view class="title out" wx:if="{{cutted}}">上传带有人像的照片，智能裁剪可以防止人像被切割，从而获得更好的缩略图体验</view>
+
+<image class="txy border" src="../index/image/txy.png" wx:if="{{!cutted}}"></image>
+
+<image class="txy border next" src="../index/image/原图@2x.png" wx:if="{{cutted}}"></image>
+
+<image class="cut1 border" src="../index/image/50x50@2x.png" wx:if="{{cutted}}"></image>
+
+<image class="cut2 border" src="../index/image/150x100@2x.png" wx:if="{{cutted}}"></image>
+
+<image class="cut3 border" src="../index/image/80x45@2x.png" wx:if="{{cutted}}"></image>
+
+<view class="bottom" bindtap="upload">
+   
+   <image class="upload" src="../index/image/cloud upload@2x.png"></image>
+   <view class="toupload">上传</view>
+
+   <view class="line"></view>
+
+</view>
